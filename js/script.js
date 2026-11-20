@@ -173,9 +173,12 @@ document.addEventListener('DOMContentLoaded', () => {
       'Bharatanatyam Artist'
     ];
     let phraseIndex = 0;
-    let charIndex = 0;
-    let isDeleting = false;
-    let typingSpeed = 90;
+    let charIndex = phrases[0].length;
+    let isDeleting = true;
+    let typingSpeed = 2400; // Hold initial phrase on load for 2.4s
+
+    // Guarantee initial text is shown immediately without delay
+    typingElement.textContent = phrases[0];
 
     const typeLoop = () => {
       const currentPhrase = phrases[phraseIndex];
@@ -183,28 +186,28 @@ document.addEventListener('DOMContentLoaded', () => {
       if (isDeleting) {
         typingElement.textContent = currentPhrase.substring(0, charIndex - 1);
         charIndex--;
-        typingSpeed = 45;
+        typingSpeed = 40;
       } else {
         typingElement.textContent = currentPhrase.substring(0, charIndex + 1);
         charIndex++;
-        typingSpeed = 90;
+        typingSpeed = 85;
       }
 
       if (!isDeleting && charIndex === currentPhrase.length) {
         // Pause at full phrase
         isDeleting = true;
-        typingSpeed = 1800;
+        typingSpeed = 2200;
       } else if (isDeleting && charIndex === 0) {
-        // Move to next phrase
+        // Switch to next phrase and start typing immediately without empty delay
         isDeleting = false;
         phraseIndex = (phraseIndex + 1) % phrases.length;
-        typingSpeed = 350;
+        typingSpeed = 120;
       }
 
       setTimeout(typeLoop, typingSpeed);
     };
 
-    typeLoop();
+    setTimeout(typeLoop, typingSpeed);
   }
 
   /* ==========================================================================
