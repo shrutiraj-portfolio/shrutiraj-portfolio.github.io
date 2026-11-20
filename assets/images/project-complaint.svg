@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p1_bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="380" fill="url(#p1_bg)"/>
+  <!-- Browser Chrome Header -->
+  <rect x="20" y="20" width="560" height="35" rx="8" fill="#334155"/>
+  <circle cx="42" cy="37" r="5" fill="#ef4444"/>
+  <circle cx="58" cy="37" r="5" fill="#f59e0b"/>
+  <circle cx="74" cy="37" r="5" fill="#10b981"/>
+  <rect x="110" y="28" width="280" height="18" rx="4" fill="#1e293b" opacity="0.7"/>
+  <text x="120" y="41" font-family="'Inter', monospace" font-size="10" fill="#94a3b8">https://portal.internal-it.com/tickets</text>
+  
+  <!-- Sidebar -->
+  <rect x="20" y="60" width="120" height="300" rx="4" fill="#1e293b"/>
+  <rect x="35" y="80" width="90" height="12" rx="3" fill="#3b82f6"/>
+  <rect x="35" y="105" width="75" height="8" rx="2" fill="#475569"/>
+  <rect x="35" y="125" width="85" height="8" rx="2" fill="#475569"/>
+  <rect x="35" y="145" width="65" height="8" rx="2" fill="#475569"/>
+
+  <!-- Main Content Area -->
+  <rect x="155" y="60" width="425" height="300" rx="6" fill="#0f172a"/>
+  <!-- Stat Badges -->
+  <rect x="170" y="75" width="90" height="45" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="180" y="93" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">Open Tickets</text>
+  <text x="180" y="112" font-family="'Poppins', sans-serif" font-size="16" font-weight="700" fill="#f87171">14</text>
+
+  <rect x="270" y="75" width="90" height="45" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="280" y="93" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">In Progress</text>
+  <text x="280" y="112" font-family="'Poppins', sans-serif" font-size="16" font-weight="700" fill="#fbbf24">28</text>
+
+  <rect x="370" y="75" width="90" height="45" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="380" y="93" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">Resolved</text>
+  <text x="380" y="112" font-family="'Poppins', sans-serif" font-size="16" font-weight="700" fill="#34d399">142</text>
+
+  <!-- Ticket Table Mockup -->
+  <rect x="170" y="135" width="395" height="28" rx="4" fill="#1e293b"/>
+  <text x="185" y="153" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#cbd5e1">ID | Issue Summary</text>
+  <text x="420" y="153" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#cbd5e1">Status</text>
+  <text x="500" y="153" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#cbd5e1">Priority</text>
+
+  <!-- Rows -->
+  <rect x="170" y="170" width="395" height="36" rx="4" fill="#1e293b" opacity="0.6"/>
+  <text x="185" y="192" font-family="'Inter', sans-serif" font-size="10" fill="#f8fafc">#IT-1092 VPN Gateway Auth Timeout</text>
+  <rect x="415" y="178" width="55" height="20" rx="10" fill="#b91c1c" opacity="0.4"/>
+  <text x="427" y="192" font-family="'Inter', sans-serif" font-size="9" fill="#fca5a5">Open</text>
+  <rect x="495" y="178" width="55" height="20" rx="10" fill="#ea580c" opacity="0.4"/>
+  <text x="507" y="192" font-family="'Inter', sans-serif" font-size="9" fill="#fdba74">High</text>
+
+  <rect x="170" y="215" width="395" height="36" rx="4" fill="#1e293b" opacity="0.6"/>
+  <text x="185" y="237" font-family="'Inter', sans-serif" font-size="10" fill="#f8fafc">#IT-1088 Oracle Client License Sync</text>
+  <rect x="415" y="223" width="70" height="20" rx="10" fill="#d97706" opacity="0.4"/>
+  <text x="422" y="237" font-family="'Inter', sans-serif" font-size="9" fill="#fde68a">Progress</text>
+  <rect x="495" y="223" width="55" height="20" rx="10" fill="#0284c7" opacity="0.4"/>
+  <text x="503" y="237" font-family="'Inter', sans-serif" font-size="9" fill="#7dd3fc">Med</text>
+
+  <rect x="170" y="260" width="395" height="36" rx="4" fill="#1e293b" opacity="0.6"/>
+  <text x="185" y="282" font-family="'Inter', sans-serif" font-size="10" fill="#f8fafc">#IT-1085 Email Routing Rule Update</text>
+  <rect x="415" y="268" width="65" height="20" rx="10" fill="#059669" opacity="0.4"/>
+  <text x="424" y="282" font-family="'Inter', sans-serif" font-size="9" fill="#6ee7b7">Resolved</text>
+  <rect x="495" y="268" width="55" height="20" rx="10" fill="#4b5563" opacity="0.4"/>
+  <text x="508" y="282" font-family="'Inter', sans-serif" font-size="9" fill="#d1d5db">Low</text>
+</svg>
